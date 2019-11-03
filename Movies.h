@@ -14,9 +14,9 @@ class Movies{
     public:
         Movies(); // constructor
         
-        void add_movie();
-        bool incriment_movie_watched();
-        void display() const;
+        void add_movie(string name , string rating, int watched);
+        bool increment_movie_watched(string name);
+        void display() ;
 };
 
 
