@@ -1,18 +1,24 @@
-#if !defined(MOVIE_H)
-#define MOVIE_H
+#ifndef _MOVIE_H_
+#define _MOVIE_H_
+
+
 
 #include<iostream>
 #include <string>
-#include "Movies.h"
+ 
+
+using namespace std;
 
 class Movie{
-    
+   
     private:
-        string movie_name;
-        string movie_rating;
-        int wathed;      
+        string  name;
+        string  rating;
+        int watched;      
     
+    public:
+        Movie(string  name , string  rating , int watched ); // Constructor
 };
 
 
-#endif // MOVIE_H
+#endif // MOVIE_H 

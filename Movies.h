@@ -1,5 +1,6 @@
-#if !defined(MOVIES_H)
-#define MOVIES_H
+#ifndef _MOVIES_H_
+#define _MOVIES_H_
+
 
 #include <vector>
 #include <string>
@@ -11,9 +12,12 @@ class Movies{
     private:
         vector<Movie> all_movies;
     public:
+        Movies(); // constructor
+        
         void add_movie();
         bool incriment_movie_watched();
-        void display();
+        void display() const;
 };
 
-#endif // MOVIES_H
+
+#endif // _MOVIES_H_
